@@ -38,10 +38,10 @@ Run notebooks in order 1 to 4
 
 | File | Purpose |
 |---|---|
-| 1. `AAI510_Group2_Final Team Project_EDA.ipynb` | Exploratory data analysis on San Francisco building data |
-| 2. `Building_Risk_Tool_Notebook.ipynb` | Creates feature tables and Unity Catalog SQL function tools |
-| 3. `Building_Risk_Agent_Notebook.ipynb` | Builds the tool-calling LLM agent and writes `agent.py` |
-| 4. `Building_Risk_Agent_Evaluation_Notebook.ipynb` | Evaluates the agent with MLflow judges and compares LLMs |
+| 1. `Building_Risk_EDA.ipynb` | Exploratory data analysis on San Francisco building data |
+| 2. `Building_Risk_Tool.ipynb` | Creates feature tables and Unity Catalog SQL function tools |
+| 3. `Building_Risk_Agent.ipynb` | Builds the tool-calling LLM agent and writes `agent.py` |
+| 4. `Building_Risk_Agent_Evaluation.ipynb` | Evaluates the agent with MLflow judges and compares LLMs |
 | 5. `agent.py` | MLflow `ResponsesAgent` definition used by the agent and evaluation notebooks |
 
 ---
@@ -50,8 +50,8 @@ Run notebooks in order 1 to 4
 
 Run these notebooks **in order** before opening the evaluation notebook:
 
-1. **`Building_Risk_Tool_Notebook.ipynb`** — Creates the feature table and three Unity Catalog tools
-2. **`Building_Risk_Agent_Notebook.ipynb`** — Creates `agent.py` and registers the working agent
+1. **`Building_Risk_Tool.ipynb`** — Creates the feature table and three Unity Catalog tools
+2. **`Building_Risk_Agent.ipynb`** — Creates `agent.py` and registers the working agent
 
 ### Required Databricks resources
 
@@ -84,7 +84,7 @@ pandas
 
 ## How to Run
 
-1. Open `Building_Risk_Agent_Evaluation_Notebook.ipynb` in Databricks.
+1. Open `Building_Risk_Agent_Evaluation.ipynb` in Databricks.
 2. Attach the notebook to a cluster with access to Unity Catalog and model serving endpoints.
 3. Run all cells from top to bottom.
 
@@ -197,9 +197,9 @@ After Section 10 completes:
 
 | Error | Likely cause | Fix |
 |---|---|---|
-| Could not read the Building Risk feature table | Tool notebook not run | Run `Building_Risk_Tool_Notebook.ipynb` first |
+| Could not read the Building Risk feature table | Tool notebook not run | Run `Building_Risk_Tool.ipynb` first |
 | Could not describe UC function | Tools not registered | Re-run the tool notebook and verify `CATALOG`/`SCHEMA` |
-| Could not import `agent.py` | Agent notebook not run | Run `Building_Risk_Agent_Notebook.ipynb` first |
+| Could not import `agent.py` | Agent notebook not run | Run `Building_Risk_Agent.ipynb` first |
 | Model serving endpoint not found | Endpoint name mismatch | Update `LLM_ENDPOINT_NAME` in `agent.py` or `LLMS_TO_COMPARE` in the notebook |
 | Evaluation dataset merge fails | UC permissions or schema issue | Confirm write access to `main.default` |
 
@@ -220,9 +220,9 @@ Do not claim unsupported precision in final project write-ups or stakeholder dem
 
 ## Related Notebooks
 
-- **EDA:** `AAI510_Group2_Final Team Project_EDA.ipynb`
-- **Tools:** `Building_Risk_Tool_Notebook.ipynb`
-- **Agent:** `Building_Risk_Agent_Notebook.ipynb`
+- **EDA:** `Building_Risk_EDA.ipynb`
+- **Tools:** `Building_Risk_Tool.ipynb`
+- **Agent:** `Building_Risk_Agent.ipynb`
 
 ---
 
