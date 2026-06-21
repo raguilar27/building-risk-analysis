@@ -1,4 +1,4 @@
-# Building Risk Agent Evaluation Notebook
+# Building Risk Analysis
 
 ## Team
 
@@ -8,8 +8,6 @@ AAI 510 Final Project — Building Risk Analysis (Group 2)
 
 **Course:** AAI 510 — Applied Artificial Intelligence  
 **Project:** AA510 Final Project — Building Risk Analysis
-
-**Notebook:** `Building_Risk_Agent_Evaluation_Notebook.ipynb`
 
 This repository contains the Databricks notebooks for the Building Risk Analysis final project. The evaluation notebook measures whether the Building Risk agent calls the right tools, stays grounded in approved risk tables, handles unsupported questions gracefully, and produces useful business-facing explanations.
 
