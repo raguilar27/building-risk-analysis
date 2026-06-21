@@ -38,9 +38,8 @@ Run notebooks in order 1 to 4
 |---|---|
 | 1. `Building_Risk_EDA.ipynb` | Exploratory data analysis on San Francisco building data |
 | 2. `Building_Risk_Tool.ipynb` | Creates feature tables and Unity Catalog SQL function tools |
-| 3. `Building_Risk_Agent.ipynb` | Builds the tool-calling LLM agent and writes `agent.py` |
+| 3. `Building_Risk_Agent.ipynb` | Builds the tool-calling LLM agent and writes `agent.py` -> MLflow `ResponsesAgent` definition used by the agent and evaluation notebooks |
 | 4. `Building_Risk_Agent_Evaluation.ipynb` | Evaluates the agent with MLflow judges and compares LLMs |
-| 5. `agent.py` | MLflow `ResponsesAgent` definition used by the agent and evaluation notebooks |
 
 ---
 
@@ -216,12 +215,13 @@ Do not claim unsupported precision in final project write-ups or stakeholder dem
 
 ---
 
-## Related Notebooks
+## Notebooks
 
 - **EDA:** `Building_Risk_EDA.ipynb`
 - **Tools:** `Building_Risk_Tool.ipynb`
 - **Agent:** `Building_Risk_Agent.ipynb`
-
+- **Agent Evaluation:** `Building_Risk_Agent_Evaluation.ipynb`
+- **Contains created agent:** `agent.py`
 ---
 
 
